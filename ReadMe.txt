@@ -4,6 +4,8 @@ thank you for downloading and installing this application. It is the first Kill/
 
 Please read the following instruction on how to use this software:
 
+0) To use the program you will at first need to install AutoHotkey (https://autohotkey.com/download/).
+
 1) Start the program by either double-clicking on "DEPTH_KD_Counter_GUI.ahk" or the "DEPTH-KD-COUNTER.exe" (either on your Desktop, or in the installation folder). This varies on your previous installation/download-choices.
 
 2) These are the important hotkeys for the program:
