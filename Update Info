@@ -1,0 +1,7 @@
+Version 1
+
+Version 1.01
+- removed installer exe, since there have been problems with detection
+- exchanged Depth KDR Counter.ahk with a working version
+
+Next changes: improving the reliability + improved endscreen-death/kill detection
