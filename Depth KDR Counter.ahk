@@ -66,24 +66,6 @@ Start:
 	Gui, Add, Text, cYellow vMyKd x100 y60 w100 Left,%Kdr% 
 	Gui, Add, Text, cSilver vStroke_2 x0 y75, _______________
 	Gui, Add, Text, cSilver vCounter x0 y95,%CounterType%
-	Gui, Add, Text, cWhite, DeathScreen =
-	Gui, Add, Text, cWhite vDS, %Deathscreen%
-	Gui, Add, Text, cWhite, DeathDetect =	
-	Gui, Add, Text, cWhite vDD, %DeathDetect%
-	Gui, Add, Text, cWhite, KillDetect =	
-	Gui, Add, Text, cWhite vKD, %KillDetect%
-	Gui, Add, Text, cWhite, AfterDeath =
-	Gui, Add, Text, cWhite vAD, %AfterDeath%
-	Gui, Add, Text, cWhite, KillClock =
-	Gui, Add, Text, cWhite vKC, %KillClock%
-	Gui, Add, Text, cWhite, Suicide =	
-	Gui, Add, Text, cWhite vSC, %Suicide%
-	Gui, Add, Text, cWhite, DeathNumber =	
-	Gui, Add, Text, cWhite vDN, %DeathNumber%
-	Gui, Add, Text, cWhite, KillNumber =
-	Gui, Add, Text, cWhite vKN, %KillNumber%
-	Gui, Add, Text, cWhite, DoubleKill =
-	Gui, Add, Text, cWhite vDK, %DoubleKill%	
 	WinSet, TransColor, White
 	WinSet, Transparent, 220
 	goto, GUI_Refresh
@@ -115,29 +97,10 @@ while (vBreaker = 0)
 	IniRead, Kills, Scripts\DEPTH_KD.ini, GUI_Counter, Kills
 	IniRead, Deaths, Scripts\DEPTH_KD.ini, GUI_Counter,Deaths
 	IniRead, Kdr, Scripts\DEPTH_KD.ini, GUI_Counter,KDR	
-	IniRead, DeathScreen, Scripts\DEPTH_KD.ini, ScriptComm, DeathScreen 
-	IniRead, DeathDetect, Scripts\DEPTH_KD.ini, ScriptComm, DeathDetect
-	IniRead, KillDetect, Scripts\DEPTH_KD.ini, ScriptComm, KillDetect
-	IniRead, AfterDeath, Scripts\DEPTH_KD.ini, ScriptComm, AfterDeath
-	IniRead, KillClock, Scripts\DEPTH_KD.ini, ScriptComm, KillClock
-	IniRead, Suicide, Scripts\DEPTH_KD.ini, ScriptComm, Suicide
-	IniRead, DeathNumber, Scripts\DEPTH_KD.ini, ScriptComm, DeathNumber
-	IniRead, KillNumber, Scripts\DEPTH_KD.ini, ScriptComm, KillNumber
-	IniRead, DoubleKill, Scripts\DEPTH_KD.ini, ScriptComm, DoubleKill
-
 	GuiControl,, Killer,%Kills%	 		
 	GuiControl,, Tod,%Deaths%  
 	GuiControl,, MyKd,%Kdr% 
 	GuiControl,, Counter, %CounterType%
-	GuiControl,, DS, %Deathscreen%
-	GuiControl,, DD, %DeathDetect%
-	GuiControl,, KD, %KillDetect%
-	GuiControl,, AD, %AfterDeath%
-	GuiControl,, KC, %KillClock%
-	GuiControl,, SC, %Suicide%
-	GuiControl,, DN, %DeathNumber%
-	GuiControl,, KN, %KillNumber%
-	GuiControl,, DK, %DoubleKill%
 	GuiControl, move, MyKd, x100
 	}
 	else if (ToggleFlag = True)
